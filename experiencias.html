@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Experiencias del Usuario</title>
+  <link rel="stylesheet" href="styles.css">
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+</head>
+<body>
+  <div class="container">
+    <a href="panel.html" class="volver">← Volver</a>
+    <h1>Experiencias del Usuario</h1>
+    <div id="experiencias"></div>
+    <div id="analisis"></div>
+    
+    <canvas id="graficoFeedback" width="250" height="200"></canvas>
+    <canvas id="graficoSalas" width="200" height="200"></canvas>
+
+  </div>
+
+  <script type="module" src="firebase-config.js"></script>
+  <script type="module" src="experiencias.js"></script>
+</body>
+</html>

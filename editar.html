@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Editar Usuario</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="container">
+    <a href="panel.html" class="volver">← Volver</a>
+    <h1>Editar Usuario</h1>
+    <form id="editarForm">
+      <label>Nombre:
+        <input type="text" id="userName" />
+      </label>
+      <label>Edad:
+        <input type="number" id="edad" />
+      </label>
+      <h3>Limitaciones</h3>
+      <div id="listaLimitaciones"></div>
+
+      
+  
+      <div id="imagenesPreview"></div>
+
+      <h3>Música</h3>
+      <div id="musicaPreview"></div>
+
+      <button type="submit">Guardar cambios</button>
+    </form>
+    <p id="estado"></p>
+  </div>
+
+  <script type="module" src="firebase-config.js"></script>
+  <script type="module" src="editar.js"></script>
+</body>
+</html>

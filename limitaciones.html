@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Gestionar Limitaciones</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container">
+    <a href="panel.html" class="volver">← Volver</a>
+    <h1>Gestionar Limitaciones</h1>
+
+    <div class="form-nueva-limitacion">
+      <input type="text" id="nuevaLimitacionInput" placeholder="Nombre de la nueva limitación">
+      <button onclick="agregarLimitacion()">Añadir</button>
+    </div>
+
+    <h2>Lista de limitaciones</h2>
+    <ul id="listaLimitaciones"></ul>
+
+    
+  </div>
+
+  <script type="module" src="firebase-config.js"></script>
+  <script type="module" src="limitaciones.js"></script>
+</body>
+</html>

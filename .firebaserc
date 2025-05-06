@@ -1,0 +1,8 @@
+{
+  "projects": {
+    "default": "fir-testing-80801",
+    "fir-testing-80801": "fir-testing-80801"
+  },
+  "targets": {},
+  "etags": {}
+}
