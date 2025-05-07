@@ -1,12 +1,37 @@
 /* styles.css */
 
 /* General */
+:root {
+  --color-primario: #3498db;
+  --color-secundario: #2ecc71;
+  --color-neutro: #f5f5f5;
+  --color-texto: #333;
+  --color-borde: #ddd;
+  --color-error: #e74c3c;
+}
+
 body {
-  margin: 0;
-  padding: 0;
-  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-  background-color: #f9f9f9;
-  color: #333;
+  background-color: var(--color-neutro);
+  color: var(--color-texto);
+}
+
+button {
+  background-color: var(--color-primario);
+  color: white;
+  border: none;
+  border-radius: 6px;
+  padding: 12px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #2980b9;
+}
+
+.error {
+  color: var(--color-error);
 }
 
 .container {
@@ -67,17 +92,6 @@ input[type="password"] {
   margin-top: 5px;
 }
 
-/* Botones */
-button {
-  padding: 12px 20px;
-  background-color: #3498db;
-  border: none;
-  color: white;
-  border-radius: 6px;
-  font-size: 16px;
-  cursor: pointer;
-  transition: background-color 0.2s ease;
-}
 
 
 /* Enlaces */
@@ -147,12 +161,6 @@ input[type="password"] {
   background-color: red
 }
 
-#añadirUsuarioBtn {
-  background-color: green;
-  display: block;
-  margin: 20px auto; /* Center horizontally */
-  text-align: center; /* Ensure text is centered */
-}
 
 /* Imagen con texto en bloque (paso 3) */
 .bloque {
@@ -184,13 +192,6 @@ input[type="password"] {
   max-height: 100px;
 }
 
-/* Errores */
-.error {
-  color: red;
-  text-align: center;
-  margin-top: 10px;
-  font-size: 14px;
-}
 
 /* Responsive */
 @media (max-width: 600px) {
@@ -277,17 +278,6 @@ input[type="password"] {
 }
 
 
-#gestionarLimitacionesBtn {
-  background-color: #ffae00;
-  color: white;
-  margin-left: 10px;
-  padding: 10px 16px;
-  border: none;
-  border-radius: 4px;
-  cursor: pointer;
-}
-
-
 #listaLimitaciones {
   display: flex;
   flex-direction: column;
@@ -297,6 +287,30 @@ input[type="password"] {
   margin-top: 20px;
   border: 2px solid #7e7c7c;
   border-radius: 8px;
+}
+
+/* Estilo para los elementos de la lista de limitaciones */
+#listaLimitaciones li {
+  display: flex;
+  justify-content: space-between; /* Alinea el texto y el botón */
+  align-items: center; /* Centra verticalmente el contenido */
+  padding: 10px;
+  border: 1px solid var(--color-borde); /* Borde alrededor de cada elemento */
+  border-radius: 6px; /* Bordes redondeados */
+  margin-bottom: 10px; /* Espaciado entre elementos */
+  background-color: #fff; /* Fondo blanco */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Sombra para un efecto más profesional */
+}
+
+/* Botón de eliminar dentro de la lista */
+#listaLimitaciones li button {
+  background-color: var(--color-error); /* Rojo para el botón de eliminar */
+  color: white;
+  border: none;
+  border-radius: 4px;
+  padding: 6px 12px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
 }
 
 #experiencias{
@@ -323,7 +337,47 @@ input[type="password"] {
   margin-bottom: 1rem;
   border-radius: 10px;
   background: #f9f9f9;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Sombra para un efecto más profesional */
+
 }
+
+.botones-superiores {
+  display: flex;
+  gap: 10px; /* Espaciado entre los botones */
+  align-items: center; /* Centra verticalmente los botones */
+  flex-wrap: wrap; /* Permite que los botones se ajusten en pantallas pequeñas */
+}
+
+
+
+#añadirUsuarioBtn {
+  background-color: green;
+  
+}
+
+
+
+#analisis-limitaciones,
+#analisis-edad {
+  background-color: #f38e21; 
+}
+
+.bloque-limitacion {
+  border: 1px solid #ccc;
+  padding: 1rem;
+  margin-bottom: 1rem;
+  border-radius: 10px;
+  background: #f9f9f9;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Sombra para un efecto más profesional */
+}
+
+.bloque-limitacion h3 {
+  margin-top: 0;
+  color: #2c3e50;
+  border-bottom: 1px solid #ddd;
+  padding-bottom: 5px;
+}
+
 
 
 

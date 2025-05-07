@@ -60,7 +60,7 @@ function cargarUsuarios() {
       });
 
       const btnVerExperiencias = document.createElement("button");
-      btnVerExperiencias.textContent = "Análisis según experiencias";
+      btnVerExperiencias.textContent = "Análisis experiencias";
       btnVerExperiencias.style.marginLeft = "10px";
       btnVerExperiencias.style.backgroundColor = "#f38e21";
       btnVerExperiencias.style.color = "white";
@@ -161,7 +161,7 @@ window.buscarUsuario = function () {
         });
 
       const btnVerExperiencias = document.createElement("button");
-      btnVerExperiencias.textContent = "Análisis según experiencias";
+      btnVerExperiencias.textContent = "Análisis experiencias";
       btnVerExperiencias.style.marginLeft = "10px";
       btnVerExperiencias.style.backgroundColor = "#f38e21";
       btnVerExperiencias.style.color = "white";

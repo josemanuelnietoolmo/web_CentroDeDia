@@ -44,7 +44,7 @@ onValue(refLimitaciones, (snapLim) => {
 }, { onlyOnce: true });
 
 function mostrarAnalisis() {
-  resultadosDiv.innerHTML = "";
+  resultadosDiv.innerHTML = "<h2>Estadísticas por Limitación</h2>";
 
   for (const limID in usuariosPorLimitacion) {
     const nombre = limitacionesMap[limID];
@@ -58,7 +58,11 @@ function mostrarAnalisis() {
       porSala[exp.sala].push(exp);
     });
 
-    let html = `<h2>${nombre}</h2>`;
+    let html = `
+      <div class="bloque-limitacion">
+        <h3>${nombre}</h3>
+    `;
+
     if (experiencias.length === 0) {
       html += "<p>No hay experiencias registradas para esta limitación.</p>";
     } else {
@@ -76,6 +80,7 @@ function mostrarAnalisis() {
       }
     }
 
+    html += `</div>`;
     resultadosDiv.innerHTML += html;
   }
 }

@@ -15,8 +15,9 @@ onValue(refLimitaciones, (snapshot) => {
 
     const li = document.createElement("li");
     li.textContent = nombre;
-
+    
     const btnEliminar = document.createElement("button");
+    btnEliminar.style.backgroundColor = "red";
     btnEliminar.textContent = "Eliminar";
     btnEliminar.style.marginLeft = "10px";
     btnEliminar.onclick = () => {
