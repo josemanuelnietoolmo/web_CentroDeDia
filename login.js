@@ -11,7 +11,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
     signInWithEmailAndPassword(auth, email, password)
       .then(() => {
-        window.location.href = "panel.html";
+        window.location.href = "panel.html"; // Redirige al panel de control
       })
       .catch((error) => {
         errorElem.textContent = "Error al iniciar sesión. Verifica tus datos.";
